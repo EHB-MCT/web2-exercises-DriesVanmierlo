@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+
+<body class="container">
+    <h1>WEB 2 First exercises</h1>
+    <form id="form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="nameForm" required>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="emailForm" required>
+            <div id="orderForm">
+                <label>Order:</label>
+                <div>
+                    <input type="checkbox" id="1" value="1" name="dish" checked>
+                    <label for="1">Kapsalon</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="2" value="2" name="dish">
+                    <label for="2">Ribbetjes met frietjes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="3" value="3" name="dish">
+                    <label for="3">Burger</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="4" value="4" name="dish">
+                    <label for="3">Pizza</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="5" value="5" name="dish">
+                    <label for="3">Wraps</label>
+                </div>
+            </div>
+            <input type="submit" id="submitBtn">
+        </div>
+        <input type="submit" id="price" value="Calculate price">
+    </form>
+    <div id="messages"></div>
+</body>
+
+</html>
