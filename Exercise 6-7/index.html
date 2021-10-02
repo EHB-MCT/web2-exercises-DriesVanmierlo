@@ -18,8 +18,21 @@
             <input type="text" name="name" id="nameForm" required>
             <label for="email">Email:</label>
             <input type="text" name="email" id="emailForm" required>
-            <label for="order">Order:</label>
-            <input type="text" id="orderForm" required>
+            <div id="orderForm">
+                <label>Order:</label>
+                <div>
+                    <input type="radio" id="1" value="1" name="dish" checked>
+                    <label for="1">Kapsalon</label>
+                </div>
+                <div>
+                    <input type="radio" id="2" value="2" name="dish">
+                    <label for="2">Ribbetjes met frietjes</label>
+                </div>
+                <div>
+                    <input type="radio" id="3" value="3" name="dish">
+                    <label for="3">Burger</label>
+                </div>
+            </div>
             <input type="submit" id="submitBtn">
         </div>
     </form>
