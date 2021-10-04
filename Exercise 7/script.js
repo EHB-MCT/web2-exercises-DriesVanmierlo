@@ -32,8 +32,6 @@ window.onload = function () {
     const form = document.getElementById('form').addEventListener('submit', (e) => {
         e.preventDefault("submit");
 
-
-
         let orderdetails = {
             name: document.getElementById("nameForm").value,
             email: document.getElementById("emailForm").value,
@@ -47,11 +45,12 @@ window.onload = function () {
         console.log(orderdetails.order.name);
 
         printOrder(orderdetails);
+
+
     });
 
-    const price = document.getElementById('price').addEventListener('submit', (e) => {
-        e.preventDefault("submit");
-        console.log("test price");
+    let price = document.getElementById('price').addEventListener('click', (e) => {
+        e.preventDefault("click");
         calculatePrice();
     });
 }
