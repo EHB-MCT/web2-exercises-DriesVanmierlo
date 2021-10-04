@@ -60,5 +60,16 @@ function printOrder(orderdetails) {
 }
 
 function calculatePrice() {
-    console.log("price");
+
+    let checkboxes = document.getElementsByName('dish');
+    let dishesSelected = [];
+
+    checkboxes.forEach(e => {
+        if (e.checked) {
+            console.log(e);
+            dishesSelected.push(e.value);
+        }
+    });
+
+    console.log(dishesSelected);
 }
