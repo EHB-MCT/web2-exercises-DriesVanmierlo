@@ -2,7 +2,6 @@
 
 let pokemonDataList = [];
 let pokemonHTML = "";
-let pokemonListHTML = [];
 
 fetchPokemon();
 
@@ -34,7 +33,7 @@ window.onload = function () {
 
     function buildList() {
         pokemonDataList.forEach(e => {
-            pokemonHTML = `<article class="pokemonArticle">
+            pokemonHTML += `<article class="pokemonArticle">
         <figure class="pokemonFigure">
             <img src="${e.sprites.front_default}" alt="">
         </figure>
@@ -50,10 +49,9 @@ window.onload = function () {
         </div>
     </article>`
 
-            pokemonListHTML.push(pokemonHTML);
         })
+        document.getElementById('sectionList').innerHTML = pokemonHTML;
 
-        document.getElementById('sectionList').innerHTML = pokemonListHTML;
 
 
     }
