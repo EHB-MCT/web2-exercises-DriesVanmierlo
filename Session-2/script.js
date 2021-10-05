@@ -1,5 +1,7 @@
 'Use strict';
 
+import Team from './Team.js';
+
 let pokemonDataList = [];
 let pokemonHTML = "";
 
@@ -51,8 +53,12 @@ window.onload = function () {
 
         })
         document.getElementById('sectionList').innerHTML = pokemonHTML;
-
-
-
     }
+
+    let team1 = new Team("Kanto Boys");
+    let teamMessage = document.getElementById(teamMessages).innerHTML = team1.describe();
+}
+
+function refreshTeam() {
+
 }
