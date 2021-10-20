@@ -2,14 +2,15 @@ import Cleave from 'cleave.js';
 
 var cleave = new Cleave('.rrn', {
     blocks: [2, 2, 2, 3, 2]
-})
+});
 
-var cleave = new Cleave('.phonenumber', {
+var cleave2 = new Cleave('.phonenumber', {
     phone: true,
     phoneRegionCode: 'BE'
 });
 
-new Cleave('.birthdate', {
+var cleave3 = new Cleave('.birthdate', {
     date: true,
+    delimiter: '-',
     datePattern: ['d', 'm', 'Y']
 });
