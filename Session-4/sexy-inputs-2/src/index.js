@@ -1,6 +1,7 @@
 import Cleave from 'cleave.js';
 
 var cleave = new Cleave('.rrn', {
+    delimiters: ['.', '.', '-', '.'],
     blocks: [2, 2, 2, 3, 2]
 });
 
