@@ -1,8 +1,10 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 
 app.use(express.static('public'))
+app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
     console.log('Local root called!')
@@ -20,6 +22,12 @@ app.get('/data', (req, res) => {
     }
 
     res.send(exampleData)
+})
+
+app.post('/saveData', (req, res) => {
+    console.log(req.body)
+
+    res.send(`Data receiced with id: ${req.body.id}`)
 })
 
 app.listen(port, () => {
